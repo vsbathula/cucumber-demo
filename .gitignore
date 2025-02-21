@@ -1,0 +1,8 @@
+.idea/
+target/
+report/
+build/
+app.log
+
+### Mac OS ###
+.DS_Store
