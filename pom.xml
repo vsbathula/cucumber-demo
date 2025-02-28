@@ -16,7 +16,7 @@
         <selenide.version>7.7.2</selenide.version>
         <webdrivermanager>5.9.3</webdrivermanager>
         <testng.version>7.10.2</testng.version>
-        <cucmber.version>7.21.1</cucmber.version>
+        <cucumber.version>7.21.1</cucumber.version>
         <gherkin.version>32.0.0</gherkin.version>
         <jackson.version>2.17.2</jackson.version>
         <extent.version>4.0.9</extent.version>
@@ -66,7 +66,7 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-java</artifactId>
-            <version>${cucmber.version}</version>
+            <version>${cucumber.version}</version>
             <exclusions>
                 <exclusion>
                     <groupId>org.slf4j</groupId>
@@ -77,17 +77,17 @@
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-testng</artifactId>
-            <version>${cucmber.version}</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-gherkin</artifactId>
-            <version>${cucmber.version}</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-picocontainer</artifactId>
-            <version>${cucmber.version}</version>
+            <version>${cucumber.version}</version>
         </dependency>
         <dependency>
             <groupId>io.cucumber</groupId>

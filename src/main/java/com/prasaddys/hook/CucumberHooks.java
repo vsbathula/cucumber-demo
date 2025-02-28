@@ -8,6 +8,8 @@ import com.prasaddys.config.platforms.PlatformReader;
 import com.prasaddys.interfaces.Platform;
 import com.prasaddys.util.CommonConstants;
 import com.prasaddys.util.JsonUtils;
+import io.cucumber.java.BeforeAll;
+import io.cucumber.java.AfterAll;
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
 import io.cucumber.java.BeforeStep;
@@ -54,6 +56,7 @@ public class CucumberHooks {
         if (platform.isPresent()) {
             Platform currentPlatformType = platform.get();
             initializeBrowser(currentPlatformType);
+            Configuration.fastSetValue = true;
             String envUrl = new EnvironmentReader(Optional.ofNullable(System.getProperty("env")).orElse("test")).getEnvUrl();
             open(envUrl);
             WebDriverRunner.getWebDriver().manage().window().maximize();

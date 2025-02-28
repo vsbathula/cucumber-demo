@@ -1,8 +1,9 @@
 .idea/
+build/
 target/
 report/
 build/
-app.log
+*.log
 
 ### Mac OS ###
 .DS_Store
