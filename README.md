@@ -26,7 +26,7 @@ config file: / src/test/resources/config.properties
 extent report config file: /sre/test/resources/extent.properties
 ```
 
-## PrerequisitesCRLE
+## Prerequisites
 Ensure you have the following prerequisites installed:
 - Java
 - Maven
